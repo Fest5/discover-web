@@ -33,6 +33,10 @@
         width: 33.333333%;
         display: table-cell;
         backface-visibility: hidden;
+
+        @include respond (tab-port) {
+            width: 0%;
+        }
     }
 
     &__right {
@@ -41,6 +45,10 @@
         vertical-align: middle;
         padding: 3rem 5rem;
         backface-visibility: hidden;
+
+        @include respond (tab-port) {
+            width: 100%;
+        }
     }
 
     &__img {
@@ -64,6 +72,11 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @include respond (tab-port) {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
     }
 
 
